@@ -27,7 +27,7 @@ int main()
 	// ex. 2
 	
 	srand((unsigned)time(NULL));
-	const int max = 1000;
+	const int max = INT32_MAX;
 	int val = rand() % max + 1;
 	int chunkSize = max;
 	int guess = max / 2;
@@ -39,6 +39,10 @@ int main()
 	{
 		attempts++;
 		chunkSize = ceil(static_cast<float>(chunkSize) / 2.0);
+
+		if (chunkSize / 2 < 1)
+			chunkSize = 2;
+		
 		std::cout << "Guessing " << guess << std::endl;
 		if (guess == val)
 		{
