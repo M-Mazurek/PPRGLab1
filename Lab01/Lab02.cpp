@@ -69,7 +69,7 @@ int main()
 	*/
 
 	// ex. 5
-
+	/*
 	int x;
 
 	std::cout << "Podaj x: ";
@@ -84,6 +84,27 @@ int main()
 		}
 	}
 	std::cout << "Tak";
+	*/
+
+	// ex. 6
+	int x, y, nwd = 1;
+
+	std::cout << "Podaj x: ";
+	std::cin >> x;
+
+	std::cout << "Podaj y: ";
+	std::cin >> y;
+
+	for (int i = (x < y) ? x : y; i > 1; i--)
+	{
+		if (x % i == 0 && y % i == 0)
+		{
+			nwd = i;
+			break;
+		}
+	}
+
+	printf("NWD(%d,%d) = %d", x, y, nwd);
 
 	return 0;
 }
