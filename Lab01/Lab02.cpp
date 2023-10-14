@@ -36,7 +36,7 @@ int main()
 	*/
 
 	// ex. 3
-
+	/*
 	int x;
 
 	std::cout << "Podaj x: ";
@@ -48,6 +48,24 @@ int main()
 		s *= i;
 
 	printf("%d! = %d", x, s);
+	*/
+
+	// ex. 4
+
+	int x;
+
+	std::cout << "Podaj x: ";
+	std::cin >> x;
+
+	for (int i = 0; i <= (x / 2) + 1; i++)
+	{
+		if (i * i == x)
+		{
+			std::cout << "Tak";
+			return 0;
+		}
+	}
+	std::cout << "Nie";
 
 	return 0;
 }
