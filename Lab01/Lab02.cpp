@@ -51,7 +51,7 @@ int main()
 	*/
 
 	// ex. 4
-
+	/*
 	int x;
 
 	std::cout << "Podaj x: ";
@@ -66,6 +66,24 @@ int main()
 		}
 	}
 	std::cout << "Nie";
+	*/
+
+	// ex. 5
+
+	int x;
+
+	std::cout << "Podaj x: ";
+	std::cin >> x;
+
+	for (int i = 2; i < x; i++)
+	{
+		if (x % i == 0)
+		{
+			std::cout << "Nie";
+			return 0;
+		}
+	}
+	std::cout << "Tak";
 
 	return 0;
 }
