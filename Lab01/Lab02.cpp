@@ -3,13 +3,13 @@
 int main()
 {
 	// ex. 1
-
+	/*
 	int x, y, sum = 0;
 
-	std::cout << "Podaj a: ";
+	std::cout << "Podaj x: ";
 	std::cin >> x;
 
-	std::cout << "Podaj b: ";
+	std::cout << "Podaj y: ";
 	std::cin >> y;
 
 	if (x % 2 == 0)
@@ -19,6 +19,20 @@ int main()
 		sum += i;
 
 	printf("Suma <%d,%d> = %d", x, y, sum);
+	*/
+
+	// ex. 2
+
+	int k;
+
+	std::cout << "Podaj k: ";
+	std::cin >> k;
+
+	for (int i = 50; i <= 100; i++)
+	{
+		if (i % k == 0)
+			std::cout << i << ' ';
+	}
 
 	return 0;
 }
