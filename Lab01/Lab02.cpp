@@ -22,7 +22,7 @@ int main()
 	*/
 
 	// ex. 2
-
+	/*
 	int k;
 
 	std::cout << "Podaj k: ";
@@ -33,6 +33,21 @@ int main()
 		if (i % k == 0)
 			std::cout << i << ' ';
 	}
+	*/
+
+	// ex. 3
+
+	int x;
+
+	std::cout << "Podaj x: ";
+	std::cin >> x;
+
+	int s = x;
+
+	for (int i = x - 1; i > 0; i--)
+		s *= i;
+
+	printf("%d! = %d", x, s);
 
 	return 0;
 }
