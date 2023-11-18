@@ -1,6 +1,6 @@
 #include <iostream>;
 
-int main()
+int main2()
 {
 	// ex. 1
 	/*

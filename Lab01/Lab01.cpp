@@ -1,6 +1,7 @@
 #include <iostream>
+#include <cmath>
 
-int _main()
+int main1()
 {
 	// ex. 1
 	/*
@@ -27,7 +28,7 @@ int _main()
 	// ex. 2
 	
 	srand((unsigned)time(NULL));
-	const int max = INT32_MAX;
+	const int max = INT_MAX;
 	int val = rand() % max + 1;
 	int chunkSize = max;
 	int guess = max / 2;
