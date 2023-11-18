@@ -31,6 +31,14 @@ void zad3_show_primes_to(unsigned int x)
             printf("%d ", i);
 }
 
+int zad4_get_power(int x, unsigned int y)
+{
+    if (y == 0)
+        return 1;
+
+    return x * zad4_get_power(x, --y);
+}
+
 int main()
 {
     // ex. 1
@@ -43,8 +51,11 @@ int main()
     //printf("%d %d\n", a, g_b);
 
     // ex. 3
-    printf("%d %d\n\n", zad3_is_prime(23), zad3_is_prime(33));
-    zad3_show_primes_to(500);
+    //printf("%d %d\n\n", zad3_is_prime(23), zad3_is_prime(33));
+    //zad3_show_primes_to(500);
+
+    // ex. 4
+    printf("%d %d", zad4_get_power(2, 8), zad4_get_power(3, 0));
 
     return 0;
 }
