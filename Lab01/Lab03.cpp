@@ -39,6 +39,14 @@ int zad4_get_power(int x, unsigned int y)
     return x * zad4_get_power(x, --y);
 }
 
+unsigned int zad5_get_digit_sum(unsigned int x)
+{
+    if (x < 10)
+        return x;
+
+    return (x % 10) + zad5_get_digit_sum(x / 10);
+}
+
 int main()
 {
     // ex. 1
@@ -55,7 +63,10 @@ int main()
     //zad3_show_primes_to(500);
 
     // ex. 4
-    printf("%d %d", zad4_get_power(2, 8), zad4_get_power(3, 0));
+    //printf("%d %d", zad4_get_power(2, 8), zad4_get_power(3, 0));
+
+    // ex. 5
+    printf("%d", zad5_get_digit_sum(123456));
 
     return 0;
 }
